@@ -67,6 +67,7 @@ function createCounter(
 
   function updateCounter() {
     counter = el.valueAsNumber;
+    callback && callback(counter);
   }
 
   function increment() {
